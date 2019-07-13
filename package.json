@@ -1,9 +1,10 @@
 {
-  "name": "dbximgs",
+  "name": "adobe-gallery",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "engines": {
     "node": "~8.2.1"
@@ -24,5 +25,8 @@
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
     "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
