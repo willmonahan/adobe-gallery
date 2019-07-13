@@ -28,7 +28,7 @@ module.exports.gallery = async (req, res, next) => {
 
           // add the "go back" to the front of the subfolder list
           result.subFolders.unshift({
-            name: 'go back',
+            name: 'Parent Folder',
             path_lower: '/' + pathBack.join('/'),
           });
         }

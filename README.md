@@ -29,8 +29,8 @@ For the second point, I removed the original root/home route-handler from both [
 
 In the gallery route handler, we use use `req.params[0]` to grab our file path (including an empty string for the root folder) which we then pass to our call to `getLinksAsync`. When we get the result back, we check to see if the folder has any subfolders OR images, and if not we render the "empty" template.
 
-We check our path to see if we're at the root: if the path is an empty string, we're at the root. If we aren't at the root, we create a "go back" button by splitting the path by `/` and removing the last element. This "go back" link is treated as another subfolder, and added to the front of the subfolder list for simplicity in the template. It also helps decide whether we need to render the navigation menu.
+We check our path to see if we're at the root: if the path is an empty string, we're at the root. If we aren't at the root, we create a "Parent Folder" button by splitting the path by `/` and removing the last element. This "Parent Folder" link is treated as another subfolder, and added to the front of the subfolder list for simplicity in the template. It also helps decide whether we need to render the navigation menu.
 
-I was a bit torn about whether to include the "go back" subfolder hyperlink. The browser back-button works fine for traversing back up the tree, but I decided to include it for cases where a user arrives directly at a subfolder link and needs to traverse back up to the parent folder.
+I was a bit torn about whether to include the "Parent Folder" hyperlink. The browser back-button works fine for traversing back up the tree, but I decided to include it for cases where a user arrives directly at a subfolder link and needs to traverse back up.
 
 That's it! I decided not to keep my implementation as simple as possible, and I'm happy with the solution that I came up with. Thanks!
