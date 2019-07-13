@@ -2,6 +2,8 @@
 
 ## Adobe Assignment by Will Monahan
 
+This app has been deployed on Heroku and can be accessed [here](https://adobe-gallery.herokuapp.com/).
+
 This private repository contains a version of the Dropbox photo gallery tutorial application (the original can be found [here](https://github.com/dropbox/nodegallerytutorial)) modified to allow for subfolder navigation. The original tutorial README can be found now at [tutorial.md](tutorial.md).
 
 As a quick disclaimer, my auto-formatter, Prettier, made some aesthetic changes (mostly to do with spacing) to some of the code in files that I modified. As a result, some changes appear in the git commit that are purely aesthetic - I did my best to add comments and make clear which code I actually did add/modify myself, and this README is intended to help with that as well.
